@@ -3,7 +3,7 @@
 
 
 # Population Management System API
-This is a population management system API that facilitates creation of locations with certain parameters such as name of location, number
+This is a population management system API that facilitates the creation of locations with certain parameters such as name of location, number
 of male and female residents. A location can also belong to another location.
 
 
