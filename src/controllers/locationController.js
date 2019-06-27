@@ -143,9 +143,9 @@ module.exports = {
       }
       // update parent location after deleting location
       if (location.parentId) {
-        updateParentLocationStats(result.parentId, result.male, result.female, '');
+        updateParentLocationStats(location.parentId, location.male, location.female, '');
       }
-      location.remove((err, result) => {
+      location.remove((err, location) => {
         return res.status(200).json({message: 'Location successfully deleted'});
       });
     });
