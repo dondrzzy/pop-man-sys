@@ -14,7 +14,7 @@ module.exports = {
   registerUser: (req, res) => {
     let errors = {};
     if (!req.body.email) {
-      errors.lastName = 'Please provide an email';
+      errors.email = 'Please provide an email';
     }
     if (!req.body.password) {
       errors.password = 'Please provide a password';
@@ -39,7 +39,7 @@ module.exports = {
   loginUser: (req, res) => {
     let errors = {};
     if(!req.body.email){
-      errors.phoneNumber = 'You must provide an email';
+      errors.email = 'You must provide an email';
     }
     if(!req.body.password){
       errors.password = 'You must provide a password';
