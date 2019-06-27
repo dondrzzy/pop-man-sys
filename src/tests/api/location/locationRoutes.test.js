@@ -150,7 +150,6 @@ describe('Location API routes', () => {
 
       locationsRes = await getLocations(loginRes.token);
       const delRes = await deleteLocation(locationsRes.body.locations[1]._id, loginRes.token);
-      console.log('delRes', delRes.body);
     })
   });
 

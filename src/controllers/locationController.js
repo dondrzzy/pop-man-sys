@@ -10,7 +10,6 @@ const updateParentLocationStats = async (parentId, maleValue, femaleValue, flag)
   } else {
     parentLocation.male = '' + (parseInt(parentLocation.male) - parseInt(maleValue));
     parentLocation.female = '' + (parseInt(parentLocation.female) - parseInt(femaleValue));
-    console.log(parentLocation);
     await parentLocation.save();
   }
   

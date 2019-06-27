@@ -40,7 +40,6 @@ app.use(function(req, res, next){
         res.status(400).json({token: false, error:'token Invalid: '+err});}
       else{
         req.decoded = decoded;
-        console.log('decoded: ', decoded);
         next(); 
       }
     });
