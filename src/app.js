@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
 
 
 app.get('/', (req, res) => {
-  return res.send('Welcome to POP-MAN-SYS. Check out the docs https://github.com/dondrzzy/sms-man-api/blob/master/README.md');
+  return res.send('Welcome to POP-MAN-SYS. Check out the docs https://github.com/dondrzzy/pop-man-sys/blob/master/README.md');
 });
 
 app.use('/api/v1/users', userRouter);
